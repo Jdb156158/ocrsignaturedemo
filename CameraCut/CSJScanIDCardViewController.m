@@ -10,7 +10,7 @@
 #import "UIColor+UIColorFromRGB.h"
 #import "CSJIDScanView.h"
 #import <Photos/Photos.h>
-#import "Masonry/Masonry/Masonry.h"
+#import <Masonry/Masonry.h>
 @interface CSJScanIDCardViewController ()<AVCaptureMetadataOutputObjectsDelegate,UIAlertViewDelegate,CAAnimationDelegate,AVCapturePhotoCaptureDelegate>
 
 @property(nonatomic,strong) CSJIDScanView *scanView;

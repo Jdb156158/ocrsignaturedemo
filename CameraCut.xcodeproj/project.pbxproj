@@ -3,36 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C01A5E9F1AD27182C7B8B7E /* Pods_CameraCutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A46610577E7E6160AF7A3B /* Pods_CameraCutTests.framework */; };
-		B41F0791FFE2544E7D0D56C8 /* Pods_CameraCut_CameraCutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 424382DDA5E8F35D1ECC79DD /* Pods_CameraCut_CameraCutUITests.framework */; };
+		076B15B325AF220F009A3224 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 076B15B225AF220F009A3224 /* UIView+Frame.m */; };
+		076B15F425AFEABA009A3224 /* aaaaaa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B15F325AFEABA009A3224 /* aaaaaa.swift */; };
+		076B161A25AFF005009A3224 /* VCLabelSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161525AFF005009A3224 /* VCLabelSticker.swift */; };
+		076B161B25AFF005009A3224 /* VCImageSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161625AFF005009A3224 /* VCImageSticker.swift */; };
+		076B161C25AFF005009A3224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076B161725AFF005009A3224 /* Images.xcassets */; };
+		076B161D25AFF005009A3224 /* VCBaseSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161825AFF005009A3224 /* VCBaseSticker.swift */; };
+		076B161E25AFF005009A3224 /* VCStickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161925AFF005009A3224 /* VCStickerUtils.swift */; };
+		4A0C5305DAEF963CA109C4B5 /* Pods_CameraCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534AD76C5894D6EFCA4CF843 /* Pods_CameraCut.framework */; };
+		594DE6EA4B7396B4683BC553 /* Pods_CameraCut_CameraCutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159FCC51D5298636074A7CA1 /* Pods_CameraCut_CameraCutUITests.framework */; };
+		6FE23D4B00750FF30B9FAF55 /* Pods_CameraCutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39887FB348AA4E7918C6458 /* Pods_CameraCutTests.framework */; };
 		D683501E2313CE9600C13E5F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D683501D2313CE9600C13E5F /* AppDelegate.m */; };
-		D68350212313CE9600C13E5F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68350202313CE9600C13E5F /* ViewController.mm */; };
+		D68350212313CE9600C13E5F /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D68350202313CE9600C13E5F /* ViewController.mm */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
 		D68350242313CE9600C13E5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68350222313CE9600C13E5F /* Main.storyboard */; };
 		D68350262313CE9800C13E5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D68350252313CE9800C13E5F /* Assets.xcassets */; };
 		D68350292313CE9800C13E5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D68350272313CE9800C13E5F /* LaunchScreen.storyboard */; };
 		D683502C2313CE9800C13E5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D683502B2313CE9800C13E5F /* main.m */; };
-		D68350362313CE9800C13E5F /* CameraCutTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350352313CE9800C13E5F /* CameraCutTests.m */; };
-		D68350412313CE9800C13E5F /* CameraCutUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350402313CE9800C13E5F /* CameraCutUITests.m */; };
 		D68350502313CEC500C13E5F /* CSJScanIDCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D683504E2313CEC500C13E5F /* CSJScanIDCardViewController.m */; };
 		D68350532313D0A100C13E5F /* CSJIDScanView.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350522313D0A100C13E5F /* CSJIDScanView.m */; };
 		D68350562313D1DB00C13E5F /* UIColor+UIColorFromRGB.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350552313D1DA00C13E5F /* UIColor+UIColorFromRGB.m */; };
-		D68350742313D29E00C13E5F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D68350582313D29E00C13E5F /* LICENSE */; };
-		D68350752313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D683505B2313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		D68350762313D29E00C13E5F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350642313D29E00C13E5F /* ViewController+MASAdditions.m */; };
-		D68350772313D29E00C13E5F /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350682313D29E00C13E5F /* MASCompositeConstraint.m */; };
-		D68350782313D29E00C13E5F /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350692313D29E00C13E5F /* MASConstraintMaker.m */; };
-		D68350792313D29E00C13E5F /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D683506A2313D29E00C13E5F /* MASLayoutConstraint.m */; };
-		D683507A2313D29E00C13E5F /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D683506B2313D29E00C13E5F /* NSArray+MASAdditions.m */; };
-		D683507B2313D29E00C13E5F /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D683506C2313D29E00C13E5F /* View+MASAdditions.m */; };
-		D683507C2313D29E00C13E5F /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D683506F2313D29E00C13E5F /* MASConstraint.m */; };
-		D683507D2313D29E00C13E5F /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350712313D29E00C13E5F /* MASViewConstraint.m */; };
-		D683507E2313D29E00C13E5F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = D68350722313D29E00C13E5F /* MASViewAttribute.m */; };
-		D683507F2313D29E00C13E5F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D68350732313D29E00C13E5F /* README.md */; };
-		FC6140DE46721D1571B2A8E5 /* Pods_CameraCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F2AE95FEF1649E3B0C0A08A /* Pods_CameraCut.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +46,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		076B15B125AF220F009A3224 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		076B15B225AF220F009A3224 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		076B15C725AF2892009A3224 /* CameraCut-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CameraCut-Bridging-Header.h"; sourceTree = "<group>"; };
+		076B15F325AFEABA009A3224 /* aaaaaa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aaaaaa.swift; sourceTree = "<group>"; };
+		076B161525AFF005009A3224 /* VCLabelSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCLabelSticker.swift; sourceTree = "<group>"; };
+		076B161625AFF005009A3224 /* VCImageSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCImageSticker.swift; sourceTree = "<group>"; };
+		076B161725AFF005009A3224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		076B161825AFF005009A3224 /* VCBaseSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseSticker.swift; sourceTree = "<group>"; };
+		076B161925AFF005009A3224 /* VCStickerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCStickerUtils.swift; sourceTree = "<group>"; };
+		159FCC51D5298636074A7CA1 /* Pods_CameraCut_CameraCutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut_CameraCutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2611BEB626DF325A18870DB7 /* Pods-CameraCutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCutTests.debug.xcconfig"; path = "Target Support Files/Pods-CameraCutTests/Pods-CameraCutTests.debug.xcconfig"; sourceTree = "<group>"; };
-		424382DDA5E8F35D1ECC79DD /* Pods_CameraCut_CameraCutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut_CameraCutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		534AD76C5894D6EFCA4CF843 /* Pods_CameraCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4E44206382F04D6B47D142 /* Pods-CameraCut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCut.debug.xcconfig"; path = "Target Support Files/Pods-CameraCut/Pods-CameraCut.debug.xcconfig"; sourceTree = "<group>"; };
-		7F2AE95FEF1649E3B0C0A08A /* Pods_CameraCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A39887FB348AA4E7918C6458 /* Pods_CameraCutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A3E23E2A0010EEEB32F9FE /* Pods-CameraCut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCut.release.xcconfig"; path = "Target Support Files/Pods-CameraCut/Pods-CameraCut.release.xcconfig"; sourceTree = "<group>"; };
 		C4B278832B3521FC030FC0F0 /* Pods-CameraCutTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCutTests.release.xcconfig"; path = "Target Support Files/Pods-CameraCutTests/Pods-CameraCutTests.release.xcconfig"; sourceTree = "<group>"; };
 		CC2B1DC45343381CBF14E42F /* Pods-CameraCut-CameraCutUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCut-CameraCutUITests.release.xcconfig"; path = "Target Support Files/Pods-CameraCut-CameraCutUITests/Pods-CameraCut-CameraCutUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,46 +74,14 @@
 		D683502A2313CE9800C13E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D683502B2313CE9800C13E5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D68350312313CE9800C13E5F /* CameraCutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraCutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68350352313CE9800C13E5F /* CameraCutTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCutTests.m; sourceTree = "<group>"; };
-		D68350372313CE9800C13E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D683503C2313CE9800C13E5F /* CameraCutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CameraCutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68350402313CE9800C13E5F /* CameraCutUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CameraCutUITests.m; sourceTree = "<group>"; };
-		D68350422313CE9800C13E5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D683504E2313CEC500C13E5F /* CSJScanIDCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJScanIDCardViewController.m; sourceTree = "<group>"; };
 		D683504F2313CEC500C13E5F /* CSJScanIDCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJScanIDCardViewController.h; sourceTree = "<group>"; };
 		D68350512313D0A100C13E5F /* CSJIDScanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSJIDScanView.h; sourceTree = "<group>"; };
 		D68350522313D0A100C13E5F /* CSJIDScanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSJIDScanView.m; sourceTree = "<group>"; };
 		D68350542313D1DA00C13E5F /* UIColor+UIColorFromRGB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColorFromRGB.h"; sourceTree = "<group>"; };
 		D68350552313D1DA00C13E5F /* UIColor+UIColorFromRGB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColorFromRGB.m"; sourceTree = "<group>"; };
-		D68350582313D29E00C13E5F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		D683505A2313D29E00C13E5F /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
-		D683505B2313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		D683505C2313D29E00C13E5F /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
-		D683505D2313D29E00C13E5F /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
-		D683505E2313D29E00C13E5F /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		D683505F2313D29E00C13E5F /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
-		D68350602313D29E00C13E5F /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
-		D68350612313D29E00C13E5F /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		D68350622313D29E00C13E5F /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
-		D68350632313D29E00C13E5F /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
-		D68350642313D29E00C13E5F /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		D68350652313D29E00C13E5F /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
-		D68350662313D29E00C13E5F /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
-		D68350672313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		D68350682313D29E00C13E5F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
-		D68350692313D29E00C13E5F /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
-		D683506A2313D29E00C13E5F /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
-		D683506B2313D29E00C13E5F /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		D683506C2313D29E00C13E5F /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
-		D683506D2313D29E00C13E5F /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		D683506E2313D29E00C13E5F /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
-		D683506F2313D29E00C13E5F /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
-		D68350702313D29E00C13E5F /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		D68350712313D29E00C13E5F /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
-		D68350722313D29E00C13E5F /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
-		D68350732313D29E00C13E5F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		DEE85D330805045E3DEC979F /* Pods-CameraCut-CameraCutUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCut-CameraCutUITests.debug.xcconfig"; path = "Target Support Files/Pods-CameraCut-CameraCutUITests/Pods-CameraCut-CameraCutUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F2A46610577E7E6160AF7A3B /* Pods_CameraCutTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCutTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC6140DE46721D1571B2A8E5 /* Pods_CameraCut.framework in Frameworks */,
+				4A0C5305DAEF963CA109C4B5 /* Pods_CameraCut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C01A5E9F1AD27182C7B8B7E /* Pods_CameraCutTests.framework in Frameworks */,
+				6FE23D4B00750FF30B9FAF55 /* Pods_CameraCutTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,19 +105,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B41F0791FFE2544E7D0D56C8 /* Pods_CameraCut_CameraCutUITests.framework in Frameworks */,
+				594DE6EA4B7396B4683BC553 /* Pods_CameraCut_CameraCutUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076B15B025AF21E7009A3224 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				076B15B125AF220F009A3224 /* UIView+Frame.h */,
+				076B15B225AF220F009A3224 /* UIView+Frame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		076B161425AFF005009A3224 /* VCSticker */ = {
+			isa = PBXGroup;
+			children = (
+				076B161525AFF005009A3224 /* VCLabelSticker.swift */,
+				076B161625AFF005009A3224 /* VCImageSticker.swift */,
+				076B161725AFF005009A3224 /* Images.xcassets */,
+				076B161825AFF005009A3224 /* VCBaseSticker.swift */,
+				076B161925AFF005009A3224 /* VCStickerUtils.swift */,
+			);
+			path = VCSticker;
+			sourceTree = "<group>";
+		};
 		D68350102313CE9600C13E5F = {
 			isa = PBXGroup;
 			children = (
 				D683501B2313CE9600C13E5F /* CameraCut */,
-				D68350342313CE9800C13E5F /* CameraCutTests */,
-				D683503F2313CE9800C13E5F /* CameraCutUITests */,
 				D683501A2313CE9600C13E5F /* Products */,
 				DE2070862AC257773F9F1464 /* Pods */,
 				EDCB3D7B442C8442B043441C /* Frameworks */,
@@ -166,6 +156,8 @@
 		D683501B2313CE9600C13E5F /* CameraCut */ = {
 			isa = PBXGroup;
 			children = (
+				076B161425AFF005009A3224 /* VCSticker */,
+				076B15B025AF21E7009A3224 /* Category */,
 				D683501C2313CE9600C13E5F /* AppDelegate.h */,
 				D683501D2313CE9600C13E5F /* AppDelegate.m */,
 				D683501F2313CE9600C13E5F /* ViewController.h */,
@@ -176,74 +168,15 @@
 				D68350522313D0A100C13E5F /* CSJIDScanView.m */,
 				D68350542313D1DA00C13E5F /* UIColor+UIColorFromRGB.h */,
 				D68350552313D1DA00C13E5F /* UIColor+UIColorFromRGB.m */,
-				D68350572313D29E00C13E5F /* Masonry */,
 				D68350222313CE9600C13E5F /* Main.storyboard */,
 				D68350252313CE9800C13E5F /* Assets.xcassets */,
 				D68350272313CE9800C13E5F /* LaunchScreen.storyboard */,
 				D683502A2313CE9800C13E5F /* Info.plist */,
 				D683502B2313CE9800C13E5F /* main.m */,
+				076B15C725AF2892009A3224 /* CameraCut-Bridging-Header.h */,
+				076B15F325AFEABA009A3224 /* aaaaaa.swift */,
 			);
 			path = CameraCut;
-			sourceTree = "<group>";
-		};
-		D68350342313CE9800C13E5F /* CameraCutTests */ = {
-			isa = PBXGroup;
-			children = (
-				D68350352313CE9800C13E5F /* CameraCutTests.m */,
-				D68350372313CE9800C13E5F /* Info.plist */,
-			);
-			path = CameraCutTests;
-			sourceTree = "<group>";
-		};
-		D683503F2313CE9800C13E5F /* CameraCutUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D68350402313CE9800C13E5F /* CameraCutUITests.m */,
-				D68350422313CE9800C13E5F /* Info.plist */,
-			);
-			path = CameraCutUITests;
-			sourceTree = "<group>";
-		};
-		D68350572313D29E00C13E5F /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				D68350582313D29E00C13E5F /* LICENSE */,
-				D68350592313D29E00C13E5F /* Masonry */,
-				D68350732313D29E00C13E5F /* README.md */,
-			);
-			path = Masonry;
-			sourceTree = "<group>";
-		};
-		D68350592313D29E00C13E5F /* Masonry */ = {
-			isa = PBXGroup;
-			children = (
-				D683505A2313D29E00C13E5F /* MASCompositeConstraint.h */,
-				D683505B2313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.m */,
-				D683505C2313D29E00C13E5F /* MASConstraint+Private.h */,
-				D683505D2313D29E00C13E5F /* MASLayoutConstraint.h */,
-				D683505E2313D29E00C13E5F /* NSArray+MASShorthandAdditions.h */,
-				D683505F2313D29E00C13E5F /* MASConstraintMaker.h */,
-				D68350602313D29E00C13E5F /* View+MASAdditions.h */,
-				D68350612313D29E00C13E5F /* NSArray+MASAdditions.h */,
-				D68350622313D29E00C13E5F /* MASUtilities.h */,
-				D68350632313D29E00C13E5F /* MASViewAttribute.h */,
-				D68350642313D29E00C13E5F /* ViewController+MASAdditions.m */,
-				D68350652313D29E00C13E5F /* MASViewConstraint.h */,
-				D68350662313D29E00C13E5F /* MASConstraint.h */,
-				D68350672313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.h */,
-				D68350682313D29E00C13E5F /* MASCompositeConstraint.m */,
-				D68350692313D29E00C13E5F /* MASConstraintMaker.m */,
-				D683506A2313D29E00C13E5F /* MASLayoutConstraint.m */,
-				D683506B2313D29E00C13E5F /* NSArray+MASAdditions.m */,
-				D683506C2313D29E00C13E5F /* View+MASAdditions.m */,
-				D683506D2313D29E00C13E5F /* View+MASShorthandAdditions.h */,
-				D683506E2313D29E00C13E5F /* Masonry.h */,
-				D683506F2313D29E00C13E5F /* MASConstraint.m */,
-				D68350702313D29E00C13E5F /* ViewController+MASAdditions.h */,
-				D68350712313D29E00C13E5F /* MASViewConstraint.m */,
-				D68350722313D29E00C13E5F /* MASViewAttribute.m */,
-			);
-			path = Masonry;
 			sourceTree = "<group>";
 		};
 		DE2070862AC257773F9F1464 /* Pods */ = {
@@ -262,9 +195,9 @@
 		EDCB3D7B442C8442B043441C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7F2AE95FEF1649E3B0C0A08A /* Pods_CameraCut.framework */,
-				424382DDA5E8F35D1ECC79DD /* Pods_CameraCut_CameraCutUITests.framework */,
-				F2A46610577E7E6160AF7A3B /* Pods_CameraCutTests.framework */,
+				534AD76C5894D6EFCA4CF843 /* Pods_CameraCut.framework */,
+				159FCC51D5298636074A7CA1 /* Pods_CameraCut_CameraCutUITests.framework */,
+				A39887FB348AA4E7918C6458 /* Pods_CameraCutTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,6 +213,7 @@
 				D68350152313CE9600C13E5F /* Sources */,
 				D68350162313CE9600C13E5F /* Frameworks */,
 				D68350172313CE9600C13E5F /* Resources */,
+				28878F1FDD709F1456CDDD5B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -317,6 +251,7 @@
 				D68350382313CE9800C13E5F /* Sources */,
 				D68350392313CE9800C13E5F /* Frameworks */,
 				D683503A2313CE9800C13E5F /* Resources */,
+				4359D788390E77F667669CF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,6 +274,7 @@
 				TargetAttributes = {
 					D68350182313CE9600C13E5F = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1230;
 					};
 					D68350302313CE9800C13E5F = {
 						CreatedOnToolsVersion = 10.3;
@@ -376,9 +312,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D68350292313CE9800C13E5F /* LaunchScreen.storyboard in Resources */,
+				076B161C25AFF005009A3224 /* Images.xcassets in Resources */,
 				D68350262313CE9800C13E5F /* Assets.xcassets in Resources */,
-				D683507F2313D29E00C13E5F /* README.md in Resources */,
-				D68350742313D29E00C13E5F /* LICENSE in Resources */,
 				D68350242313CE9600C13E5F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +335,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		28878F1FDD709F1456CDDD5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraCut/Pods-CameraCut-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraCut/Pods-CameraCut-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CameraCut/Pods-CameraCut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		3C67728BA4C54D6E2DE7373A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +372,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4359D788390E77F667669CF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraCut-CameraCutUITests/Pods-CameraCut-CameraCutUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CameraCut-CameraCutUITests/Pods-CameraCut-CameraCutUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CameraCut-CameraCutUITests/Pods-CameraCut-CameraCutUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		441D30C8B881EAAA0840A3B4 /* [CP] Check Pods Manifest.lock */ = {
@@ -473,22 +442,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D683507D2313D29E00C13E5F /* MASViewConstraint.m in Sources */,
+				076B161B25AFF005009A3224 /* VCImageSticker.swift in Sources */,
 				D68350212313CE9600C13E5F /* ViewController.mm in Sources */,
-				D68350782313D29E00C13E5F /* MASConstraintMaker.m in Sources */,
+				076B161E25AFF005009A3224 /* VCStickerUtils.swift in Sources */,
+				076B161D25AFF005009A3224 /* VCBaseSticker.swift in Sources */,
 				D68350532313D0A100C13E5F /* CSJIDScanView.m in Sources */,
-				D68350762313D29E00C13E5F /* ViewController+MASAdditions.m in Sources */,
-				D68350752313D29E00C13E5F /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				D68350772313D29E00C13E5F /* MASCompositeConstraint.m in Sources */,
 				D683502C2313CE9800C13E5F /* main.m in Sources */,
-				D68350792313D29E00C13E5F /* MASLayoutConstraint.m in Sources */,
-				D683507B2313D29E00C13E5F /* View+MASAdditions.m in Sources */,
-				D683507A2313D29E00C13E5F /* NSArray+MASAdditions.m in Sources */,
 				D68350562313D1DB00C13E5F /* UIColor+UIColorFromRGB.m in Sources */,
 				D683501E2313CE9600C13E5F /* AppDelegate.m in Sources */,
-				D683507E2313D29E00C13E5F /* MASViewAttribute.m in Sources */,
-				D683507C2313D29E00C13E5F /* MASConstraint.m in Sources */,
+				076B15F425AFEABA009A3224 /* aaaaaa.swift in Sources */,
+				076B161A25AFF005009A3224 /* VCLabelSticker.swift in Sources */,
 				D68350502313CEC500C13E5F /* CSJScanIDCardViewController.m in Sources */,
+				076B15B325AF220F009A3224 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,7 +461,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68350362313CE9800C13E5F /* CameraCutTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +468,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D68350412313CE9800C13E5F /* CameraCutUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,8 +623,10 @@
 			baseConfigurationReference = 6B4E44206382F04D6B47D142 /* Pods-CameraCut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F7YBM7MWE6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -676,6 +641,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jhjh.CameraCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraCut/CameraCut-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -685,8 +653,10 @@
 			baseConfigurationReference = B7A3E23E2A0010EEEB32F9FE /* Pods-CameraCut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = F7YBM7MWE6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -701,6 +671,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jhjh.CameraCut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CameraCut/CameraCut-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -709,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2611BEB626DF325A18870DB7 /* Pods-CameraCutTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CameraCutTests/Info.plist;
@@ -728,6 +701,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C4B278832B3521FC030FC0F0 /* Pods-CameraCutTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CameraCutTests/Info.plist;
@@ -747,6 +721,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEE85D330805045E3DEC979F /* Pods-CameraCut-CameraCutUITests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CameraCutUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -765,6 +740,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CC2B1DC45343381CBF14E42F /* Pods-CameraCut-CameraCutUITests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CameraCutUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

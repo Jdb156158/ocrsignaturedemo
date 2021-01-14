@@ -16,14 +16,16 @@
 #import "CSJIDScanView.h"
 #import "CSJScanIDCardViewController.h"
 
+#import "CameraCut-Bridging-Header.h"
+#import "CameraCut-Swift.h"
 
 @interface ViewController (){
     cv::Mat cvImage;
     cv::Mat image_canny;
 }
-@property (weak, nonatomic) IBOutlet UIImageView *ImageView;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewLayoutHeight;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageViewLayoutWidth;
+
+//签名
+@property (strong, nonatomic) VCImageSticker *imageSticker;
 
 @end
 
@@ -32,20 +34,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.imageViewLayoutWidth.constant = scanBorderW;
-    self.imageViewLayoutHeight.constant = scanBorderH;
-    [self.ImageView setContentMode:UIViewContentModeScaleAspectFill];
+    
+    self.imageSticker = [[VCImageSticker alloc] initWithFrame:CGRectMake(0, kScreenHeight-100-scanBorderH, scanBorderW, scanBorderH)];
+    [self.imageSticker.imageView setContentMode:UIViewContentModeScaleAspectFill];
+    self.imageSticker.imageView.clipsToBounds = YES;
 }
 
 - (IBAction)takePicture:(UIButton *)sender {
     CSJScanIDCardViewController * scVC = [[CSJScanIDCardViewController alloc]init];
     scVC.imageBackBlock = ^(UIImage * _Nonnull image) {
-        [self changeImageBg2:image];
+        [self changeImageBg:image];
     };
     [self.navigationController pushViewController:scVC animated:YES];
 }
 
-- (void)changeImageBg2:(UIImage *)image{
+- (void)changeImageBg:(UIImage *)image{
     
     //将UIImage对象转为Mat
     UIImageToMat(image, cvImage);
@@ -76,39 +79,11 @@
     }
     
     UIImage *newImage = MatToUIImage(image_canny);
-    self.ImageView.image = newImage;
-            
-}
-
-- (void)changeImageBg:(UIImage *)image{
-
-    UIImageToMat(image, cvImage);
-    //1:先灰度处理
-    /*
-     参数解释：
-     InputArray src –-输入图像即要进行颜色空间变换的原图像，可以是Mat类
-     OutputArray dst –-输出图像即进行颜色空间变换后存储图像，也可以Mat类
-     int code –-转换的代码或标识
-     int dstCn = 0 –-目标图像通道数，如果取值为0，则由src和code决定
-     */
-    cv::cvtColor(cvImage, cvImage, CV_RGB2GRAY);
-    //2:二值化
-    /*
-     参数：
-
-     　　_src  　　　　要二值化的灰度图
-     　　_dst  　　　　二值化后的图
-     　　maxValue　　二值化后要设置的那个值
-     　　method　　　块计算的方法（ADAPTIVE_THRESH_MEAN_C 平均值，ADAPTIVE_THRESH_GAUSSIAN_C 高斯分布加权和）
-     　　type　　　　  二值化类型（CV_THRESH_BINARY 大于为最大值，CV_THRESH_BINARY_INV 小于为最大值）
-     　　blockSize　　块大小（奇数，大于1）
-     　　delta 　　　　差值（负值也可以）
-     */
-    cv::adaptiveThreshold(cvImage, cvImage, 255, CV_ADAPTIVE_THRESH_GAUSSIAN_C, CV_THRESH_BINARY, 31, 40);
-
-    UIImage *newImage = MatToUIImage(cvImage);
     
-    self.ImageView.image = newImage;
+    [self.imageSticker removeFromSuperview];
+    self.imageSticker.imageView.image = newImage;
+    [self.view addSubview:self.imageSticker];
+            
 }
 
 //从UIImage对象转换为4通道的Mat，即是原图的Mat

@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="oef-v4-gXS">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,7 +12,7 @@
             <objects>
                 <navigationController id="oef-v4-gXS" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9oM-TY-j0q">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -33,52 +32,38 @@
                         <viewControllerLayoutGuide type="bottom" id="Mw5-Kf-JEk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRC-EC-NP2">
-                                <rect key="frame" x="87" y="231" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.98431372549999996" green="0.50196078430000002" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="U8g-eu-wQA"/>
-                                    <constraint firstAttribute="height" constant="128" id="vZY-Jw-fOb"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textBg" translatesAutoresizingMaskIntoConstraints="NO" id="peB-ac-fHO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="692"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBP-dm-74D">
-                                <rect key="frame" x="157" y="536" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="AEX-zF-0d4"/>
-                                    <constraint firstAttribute="height" constant="30" id="mlY-7V-WxX"/>
-                                </constraints>
-                                <state key="normal" title="拍照"/>
+                                <rect key="frame" x="28" y="671" width="92" height="30"/>
+                                <state key="normal" title="拍照添加签名"/>
                                 <connections>
                                     <action selector="takePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVq-Ea-8ts"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="yBP-dm-74D" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ln-26-PXv"/>
-                            <constraint firstItem="yBP-dm-74D" firstAttribute="top" secondItem="lRC-EC-NP2" secondAttribute="bottom" constant="177" id="FKi-Po-Sj5"/>
-                            <constraint firstItem="lRC-EC-NP2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yfb-oB-M5x"/>
-                            <constraint firstItem="lRC-EC-NP2" firstAttribute="top" secondItem="hjX-HP-Sc2" secondAttribute="bottom" constant="143" id="zNm-az-FBQ"/>
+                            <constraint firstItem="yBP-dm-74D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="17z-SI-seM"/>
+                            <constraint firstItem="Mw5-Kf-JEk" firstAttribute="top" secondItem="yBP-dm-74D" secondAttribute="bottom" constant="35" id="GNO-uj-Vxp"/>
+                            <constraint firstAttribute="trailing" secondItem="peB-ac-fHO" secondAttribute="trailing" id="HFD-xx-SoP"/>
+                            <constraint firstItem="peB-ac-fHO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tsb-tj-oZD"/>
+                            <constraint firstItem="peB-ac-fHO" firstAttribute="top" secondItem="hjX-HP-Sc2" secondAttribute="bottom" id="aoh-UR-qeY"/>
+                            <constraint firstItem="Mw5-Kf-JEk" firstAttribute="top" secondItem="peB-ac-fHO" secondAttribute="bottom" id="wAT-sj-lQK"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fMM-Av-Shi"/>
-                    <connections>
-                        <outlet property="ImageView" destination="lRC-EC-NP2" id="XXu-gC-9rC"/>
-                        <outlet property="imageViewLayoutHeight" destination="vZY-Jw-fOb" id="EPI-mP-2le"/>
-                        <outlet property="imageViewLayoutWidth" destination="U8g-eu-wQA" id="uSI-nh-EfA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="665" y="69"/>
+            <point key="canvasLocation" x="663.768115942029" y="68.973214285714278"/>
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="textBg" width="729" height="853"/>
     </resources>
 </document>

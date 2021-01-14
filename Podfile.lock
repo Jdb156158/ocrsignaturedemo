@@ -1,16 +1,20 @@
 PODS:
+  - Masonry (1.1.0)
   - OpenCV2 (4.3.0)
 
 DEPENDENCIES:
+  - Masonry
   - OpenCV2
 
 SPEC REPOS:
   trunk:
+    - Masonry
     - OpenCV2
 
 SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   OpenCV2: ffe82e5cb5d16dc3fc01a5f4127b9a5b3cfc7d1b
 
-PODFILE CHECKSUM: 51962103ac0075b41224e12ebf848e7252b92d66
+PODFILE CHECKSUM: 39e7dcaff7649ee69aeedc4f2db7be7efad3a103
 
 COCOAPODS: 1.10.0
