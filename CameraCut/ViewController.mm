@@ -110,5 +110,7 @@
     return cvMat;
 }
 
+- (IBAction)jumpCropView:(id)sender {
+}
 
 @end

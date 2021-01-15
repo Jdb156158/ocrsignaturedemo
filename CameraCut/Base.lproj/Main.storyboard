@@ -45,22 +45,31 @@
                                     <action selector="takePicture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JVq-Ea-8ts"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j6m-WE-Xj0">
+                                <rect key="frame" x="36" y="85" width="31" height="30"/>
+                                <state key="normal" title="跳转"/>
+                                <connections>
+                                    <action selector="jumpCropView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="58h-lz-2Sb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="yBP-dm-74D" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="17z-SI-seM"/>
                             <constraint firstItem="Mw5-Kf-JEk" firstAttribute="top" secondItem="yBP-dm-74D" secondAttribute="bottom" constant="35" id="GNO-uj-Vxp"/>
                             <constraint firstAttribute="trailing" secondItem="peB-ac-fHO" secondAttribute="trailing" id="HFD-xx-SoP"/>
+                            <constraint firstItem="j6m-WE-Xj0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="JqR-Od-7ge"/>
                             <constraint firstItem="peB-ac-fHO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Tsb-tj-oZD"/>
                             <constraint firstItem="peB-ac-fHO" firstAttribute="top" secondItem="hjX-HP-Sc2" secondAttribute="bottom" id="aoh-UR-qeY"/>
                             <constraint firstItem="Mw5-Kf-JEk" firstAttribute="top" secondItem="peB-ac-fHO" secondAttribute="bottom" id="wAT-sj-lQK"/>
+                            <constraint firstItem="j6m-WE-Xj0" firstAttribute="top" secondItem="hjX-HP-Sc2" secondAttribute="bottom" constant="41" id="wiK-r3-MqV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fMM-Av-Shi"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="663.768115942029" y="68.973214285714278"/>
+            <point key="canvasLocation" x="-471" y="7"/>
         </scene>
     </scenes>
     <resources>

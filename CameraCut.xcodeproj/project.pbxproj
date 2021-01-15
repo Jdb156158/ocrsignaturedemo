@@ -14,6 +14,14 @@
 		076B161C25AFF005009A3224 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076B161725AFF005009A3224 /* Images.xcassets */; };
 		076B161D25AFF005009A3224 /* VCBaseSticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161825AFF005009A3224 /* VCBaseSticker.swift */; };
 		076B161E25AFF005009A3224 /* VCStickerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076B161925AFF005009A3224 /* VCStickerUtils.swift */; };
+		076B16DC25B1AAF7009A3224 /* UIColor+HexRepresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 076B16D625B1AAF7009A3224 /* UIColor+HexRepresentation.m */; };
+		076B16DD25B1AAF7009A3224 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 076B16D925B1AAF7009A3224 /* UIImage+fixOrientation.m */; };
+		076B16DE25B1AAF7009A3224 /* UIImageView+ContentFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 076B16DB25B1AAF7009A3224 /* UIImageView+ContentFrame.m */; };
+		076B16E925B1ACA2009A3224 /* MMCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 076B16E325B1ACA2009A3224 /* MMCropView.m */; };
+		076B16EA25B1ACA2009A3224 /* MMOpenCVHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 076B16E725B1ACA2009A3224 /* MMOpenCVHelper.mm */; };
+		076B16EB25B1ACA2009A3224 /* MTGeometry.c in Sources */ = {isa = PBXBuildFile; fileRef = 076B16E825B1ACA2009A3224 /* MTGeometry.c */; };
+		076B16F225B1AEAD009A3224 /* CropViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 076B16EF25B1AEAC009A3224 /* CropViewController.xib */; };
+		076B16F325B1AEAD009A3224 /* CropViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 076B16F025B1AEAC009A3224 /* CropViewController.mm */; };
 		4A0C5305DAEF963CA109C4B5 /* Pods_CameraCut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534AD76C5894D6EFCA4CF843 /* Pods_CameraCut.framework */; };
 		594DE6EA4B7396B4683BC553 /* Pods_CameraCut_CameraCutUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159FCC51D5298636074A7CA1 /* Pods_CameraCut_CameraCutUITests.framework */; };
 		6FE23D4B00750FF30B9FAF55 /* Pods_CameraCutTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A39887FB348AA4E7918C6458 /* Pods_CameraCutTests.framework */; };
@@ -55,6 +63,21 @@
 		076B161725AFF005009A3224 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		076B161825AFF005009A3224 /* VCBaseSticker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCBaseSticker.swift; sourceTree = "<group>"; };
 		076B161925AFF005009A3224 /* VCStickerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCStickerUtils.swift; sourceTree = "<group>"; };
+		076B16D625B1AAF7009A3224 /* UIColor+HexRepresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexRepresentation.m"; sourceTree = "<group>"; };
+		076B16D725B1AAF7009A3224 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		076B16D825B1AAF7009A3224 /* UIColor+HexRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexRepresentation.h"; sourceTree = "<group>"; };
+		076B16D925B1AAF7009A3224 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		076B16DA25B1AAF7009A3224 /* UIImageView+ContentFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ContentFrame.h"; sourceTree = "<group>"; };
+		076B16DB25B1AAF7009A3224 /* UIImageView+ContentFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ContentFrame.m"; sourceTree = "<group>"; };
+		076B16E325B1ACA2009A3224 /* MMCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMCropView.m; sourceTree = "<group>"; };
+		076B16E425B1ACA2009A3224 /* MTGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTGeometry.h; sourceTree = "<group>"; };
+		076B16E525B1ACA2009A3224 /* MMOpenCVHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMOpenCVHelper.h; sourceTree = "<group>"; };
+		076B16E625B1ACA2009A3224 /* MMCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMCropView.h; sourceTree = "<group>"; };
+		076B16E725B1ACA2009A3224 /* MMOpenCVHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MMOpenCVHelper.mm; sourceTree = "<group>"; };
+		076B16E825B1ACA2009A3224 /* MTGeometry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = MTGeometry.c; sourceTree = "<group>"; };
+		076B16EF25B1AEAC009A3224 /* CropViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CropViewController.xib; sourceTree = "<group>"; };
+		076B16F025B1AEAC009A3224 /* CropViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CropViewController.mm; sourceTree = "<group>"; };
+		076B16F125B1AEAD009A3224 /* CropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropViewController.h; sourceTree = "<group>"; };
 		159FCC51D5298636074A7CA1 /* Pods_CameraCut_CameraCutUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut_CameraCutUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2611BEB626DF325A18870DB7 /* Pods-CameraCutTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CameraCutTests.debug.xcconfig"; path = "Target Support Files/Pods-CameraCutTests/Pods-CameraCutTests.debug.xcconfig"; sourceTree = "<group>"; };
 		534AD76C5894D6EFCA4CF843 /* Pods_CameraCut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CameraCut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +138,14 @@
 		076B15B025AF21E7009A3224 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D68350542313D1DA00C13E5F /* UIColor+UIColorFromRGB.h */,
+				D68350552313D1DA00C13E5F /* UIColor+UIColorFromRGB.m */,
+				076B16D825B1AAF7009A3224 /* UIColor+HexRepresentation.h */,
+				076B16D625B1AAF7009A3224 /* UIColor+HexRepresentation.m */,
+				076B16D725B1AAF7009A3224 /* UIImage+fixOrientation.h */,
+				076B16D925B1AAF7009A3224 /* UIImage+fixOrientation.m */,
+				076B16DA25B1AAF7009A3224 /* UIImageView+ContentFrame.h */,
+				076B16DB25B1AAF7009A3224 /* UIImageView+ContentFrame.m */,
 				076B15B125AF220F009A3224 /* UIView+Frame.h */,
 				076B15B225AF220F009A3224 /* UIView+Frame.m */,
 			);
@@ -131,6 +162,19 @@
 				076B161925AFF005009A3224 /* VCStickerUtils.swift */,
 			);
 			path = VCSticker;
+			sourceTree = "<group>";
+		};
+		076B16E225B1AB8A009A3224 /* OpenCvCtrl */ = {
+			isa = PBXGroup;
+			children = (
+				076B16E625B1ACA2009A3224 /* MMCropView.h */,
+				076B16E325B1ACA2009A3224 /* MMCropView.m */,
+				076B16E525B1ACA2009A3224 /* MMOpenCVHelper.h */,
+				076B16E725B1ACA2009A3224 /* MMOpenCVHelper.mm */,
+				076B16E825B1ACA2009A3224 /* MTGeometry.c */,
+				076B16E425B1ACA2009A3224 /* MTGeometry.h */,
+			);
+			path = OpenCvCtrl;
 			sourceTree = "<group>";
 		};
 		D68350102313CE9600C13E5F = {
@@ -156,6 +200,7 @@
 		D683501B2313CE9600C13E5F /* CameraCut */ = {
 			isa = PBXGroup;
 			children = (
+				076B16E225B1AB8A009A3224 /* OpenCvCtrl */,
 				076B161425AFF005009A3224 /* VCSticker */,
 				076B15B025AF21E7009A3224 /* Category */,
 				D683501C2313CE9600C13E5F /* AppDelegate.h */,
@@ -166,8 +211,9 @@
 				D683504E2313CEC500C13E5F /* CSJScanIDCardViewController.m */,
 				D68350512313D0A100C13E5F /* CSJIDScanView.h */,
 				D68350522313D0A100C13E5F /* CSJIDScanView.m */,
-				D68350542313D1DA00C13E5F /* UIColor+UIColorFromRGB.h */,
-				D68350552313D1DA00C13E5F /* UIColor+UIColorFromRGB.m */,
+				076B16F125B1AEAD009A3224 /* CropViewController.h */,
+				076B16F025B1AEAC009A3224 /* CropViewController.mm */,
+				076B16EF25B1AEAC009A3224 /* CropViewController.xib */,
 				D68350222313CE9600C13E5F /* Main.storyboard */,
 				D68350252313CE9800C13E5F /* Assets.xcassets */,
 				D68350272313CE9800C13E5F /* LaunchScreen.storyboard */,
@@ -315,6 +361,7 @@
 				076B161C25AFF005009A3224 /* Images.xcassets in Resources */,
 				D68350262313CE9800C13E5F /* Assets.xcassets in Resources */,
 				D68350242313CE9600C13E5F /* Main.storyboard in Resources */,
+				076B16F225B1AEAD009A3224 /* CropViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076B16E925B1ACA2009A3224 /* MMCropView.m in Sources */,
 				076B161B25AFF005009A3224 /* VCImageSticker.swift in Sources */,
 				D68350212313CE9600C13E5F /* ViewController.mm in Sources */,
 				076B161E25AFF005009A3224 /* VCStickerUtils.swift in Sources */,
@@ -449,10 +497,16 @@
 				D68350532313D0A100C13E5F /* CSJIDScanView.m in Sources */,
 				D683502C2313CE9800C13E5F /* main.m in Sources */,
 				D68350562313D1DB00C13E5F /* UIColor+UIColorFromRGB.m in Sources */,
+				076B16EB25B1ACA2009A3224 /* MTGeometry.c in Sources */,
+				076B16F325B1AEAD009A3224 /* CropViewController.mm in Sources */,
 				D683501E2313CE9600C13E5F /* AppDelegate.m in Sources */,
+				076B16DE25B1AAF7009A3224 /* UIImageView+ContentFrame.m in Sources */,
+				076B16DD25B1AAF7009A3224 /* UIImage+fixOrientation.m in Sources */,
 				076B15F425AFEABA009A3224 /* aaaaaa.swift in Sources */,
 				076B161A25AFF005009A3224 /* VCLabelSticker.swift in Sources */,
+				076B16DC25B1AAF7009A3224 /* UIColor+HexRepresentation.m in Sources */,
 				D68350502313CEC500C13E5F /* CSJScanIDCardViewController.m in Sources */,
+				076B16EA25B1ACA2009A3224 /* MMOpenCVHelper.mm in Sources */,
 				076B15B325AF220F009A3224 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
